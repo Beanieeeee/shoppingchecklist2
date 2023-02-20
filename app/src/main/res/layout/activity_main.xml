@@ -7,19 +7,19 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <ListView
-        android:id="@+id/listshop"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
         android:layout_marginBottom="200sp"
-        android:paddingTop="30sp">
+        android:paddingTop="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
-    </ListView>
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/listshop"
+        android:layout_below="@+id/recycler_view"
         android:layout_marginTop="-150sp"
         android:orientation="horizontal">
 
@@ -39,5 +39,4 @@
             android:text="Button" />
 
     </LinearLayout>
-
-
+</LinearLayout>
